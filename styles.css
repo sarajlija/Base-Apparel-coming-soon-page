@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@320&display=swap');
+:root {
+    --first-gradient: linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%) );
+    --second-gradient: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) );
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:  hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    
+    line-height: 3.5rem;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    margin: 80px 0 30px 0; 
+
+}
+
+h1 .coming-soon {
+    color: #000000;
+    font-weight: bolder;
+}
+
+
+h1 .were {
+    color:  hsl(0, 36%, 70%);
+    font-weight: lighter;
+    font-style: 100;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    background-image: url(./images/logo.svg), url(./images/bg-pattern-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-position: top 50px left 80px, top  left;
+    height: 100vh;
+
+}
+
+.container {
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+   
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50vw;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding: 80px 80px 0 80px;
+    align-self: center;
+    line-height: 2rem;
+}
+
+.title p {
+    font-size: 16px;
+   font-weight: 600;
+
+}
+.image-hero {
+    height: 100vh;
+    width: 45vw;
+    object-fit: cover;
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    
+}
+.cont-email {
+    position: relative;
+    display:flex;
+    border:0;
+    width: 80%;
+    height: 2.7rem;
+    justify-content: space-between;
+    border: 1px rgb(206, 151, 151) solid;
+    border-radius: 50px;
+    margin-top: 24px;
+    min-width: 38vw;
+ }
+ 
+  .email {
+     width: 100%;
+     padding-left: 1rem;
+     border: none;
+     font-size: 16px;
+     height: auto;
+     border-radius: 50px;
+     outline: none;
+     color: hsl(0, 93%, 68%);
+ }
+
+  #join {
+    position: absolute;
+    width: 4.5rem;
+    height: 2.7rem;
+    font-size: 1.1rem;
+    border: 0;
+    color: #fff;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    right: 0px;
+    box-shadow: -1px 7px 17px 0px pink;
+    background-image: var( --second-gradient);
+}
+  
+ #error {
+     display: none;
+     margin-top: 9px;
+     margin-right: 78px;
+     color: rgb(212, 81, 81) ;
+    
+ }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 120px;
+
+} 
+
+.attribution {
+    font-size: 11px;
+    margin-bottom: 0px;
+    }
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+@media screen and (max-width: 687px) {
+    body {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-image: url(./images/logo.svg), url(./images/bg-pattern-desktop.svg) ;
+        background-repeat: no-repeat;
+        background-position: top 30px left 60px, top  left;
+        height: 100vh;
+
+    }
+    h1 {
+        line-height: 3rem;
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+        font-weight: bolder;
+        margin: 160px 0 10px 0;
+        text-align: center;
+    }
+
+    .container {
+        position: relative;
+        display: flex;  
+        flex-direction: row;
+    
+    }
+
+    .title {
+        position: absolute;
+        top: 400px;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        margin: 0 auto;
+        padding: 70px 30px;
+        }
+
+    .title p {
+         margin-bottom: 20px;
+    }
+
+    .image-hero {
+        position: absolute;
+        top: 70px;
+        height: 66vh;
+        width: 100vw;
+        object-fit: cover;
+
+    }
+
+    .hero {
+        object-fit: cover;
+    }
+
+    .cont-email {
+        position: relative;
+        display: flex;
+        width: 60%;
+        height: 2.7rem;
+        justify-content: space-between;
+        border: 1px rgb(206, 151, 151) solid;
+        border-radius: 50px;
+        margin-top: 24px;
+        margin: 0 auto;
+        }
+
+    footer {
+       bottom: -160px;
+    left: 23vw;
+    }
+    
+}
+@media screen and (max-width: 492px) {
+    footer {
+         bottom: -130px;
+        left: 23vw;
+    }
+
+    h1 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    font-weight: bolder;
+    margin: 120px 0 10px 0;
+    text-align: center;
+    }
+
+    .image-hero {
+        position: absolute;
+        top: 80px;
+        height: 45vh;
+        width: 100vw;
+        object-fit: cover;
+        min-width: 375px;
+    }
+
+    .title {
+        position: absolute;
+        top: 350px;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        margin: 0 auto;
+        padding: 50px 30px 0 30px;
+    }
+    .title p {
+         margin-bottom: 20px;
+    }
+    
+    .cont-email {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border: 1px rgb(206, 151, 151) solid;
+        border-radius: 50px;
+        margin: 0 auto;
+        min-width: 305px;
+    }
+  
+}
+
+
+
+
+
+
